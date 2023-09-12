@@ -22,12 +22,12 @@
     * "createdAt" DATE,
     * "updatedAt" DATE
 2. "account"
-    "id" BIGINT NOT NULL, PK
-    "title" TEXT NOT NULL,
-    "type" VARCHAR(255),
-    "key" TEXT NULL,
-    "createdAt" DATE,
-    "updatedAt" DATE
+    * "id" BIGINT NOT NULL, PK
+    * "title" TEXT NOT NULL,
+    * "type" VARCHAR(255),
+    * "key" TEXT NULL,
+    * "createdAt" DATE,
+    * "updatedAt" DATE
 3. "project"
     * "id" BIGINT NOT NULL, PK
     * "key" TEXT NOT NULL,
@@ -62,7 +62,7 @@
     * "key" TEXT NOT NULL,
     * "email" TEXT NOT NULL,
     * "departmentId" BIGINT NULL, -> department
-    * "role" VARCHAR(255) CHECK
+    * "roleId" BIGINT NOT NULL -> employee_role
     * "createdAt" DATE,
     * "updatedAt" DATE
 8. "version"
@@ -85,5 +85,4 @@
     * "id" BIGINT NOT NULL, PK
     * "projectId" BIGINT NOT NULL -> project
     * "userId" BIGINT NOT NULL -> user
-);
    
